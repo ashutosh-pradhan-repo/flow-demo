@@ -20,7 +20,7 @@ describe('when the page loads', () => {
     });
   });
 
-  it('it should display the correct content', (done) => {
+  it('it should display the correct content from server', (done) => {
     chai.request(server)
     .get('/')
     .end( (err, res) => {
